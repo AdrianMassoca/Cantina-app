@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+
+import { ref } from 'vue'
+
+const escuro = ref(false)
+
+function alternarTema() {
+  escuro.value = !escuro.value
+  document.documentElement.classList.toggle('dark',
+    escuro.value)
+}
+</script>
 
 <template>
   <div class="min-h-screen bg-gray-100 transition-colors dark:bg-gray-900">
