@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 
 defineProps({
-  totalitens: { type:Number, default: 0},
+  totalItens: { type:Number, default: 0},
 })
 
 const escuro = ref(false)
@@ -27,12 +27,12 @@ function alternarTema() {
           <a href="#" class="rounded-lg px-3 py-2 transition-colors hover:bg-escola-700">Meus Pedidos</a>
           <a href="#" class="relative rounded-lg px-3 py-2 transition-colors hover:bg-escola-700">
             🛒 Carrinho
-            <span v-if="totalitens > 0" class="absolute -top-1 - right-1 flex h-6
+            <span v-if="totalItens > 0" class="absolute -top-1 - right-1 flex h-6
             w-6 items-center justify-center rounded-full
             bg-yellow-400 text-xs font-bold
             text-gray-900"
             >
-            {{ totalitens }}
+            {{ totalItens }}
             </span>
           </a>
           <button
