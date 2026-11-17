@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CardapioView from '../views/CardapioView,vue'
+import CardapioView from '../views/CardapioView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
